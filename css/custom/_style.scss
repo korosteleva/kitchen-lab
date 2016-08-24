@@ -9,11 +9,14 @@ html {
 .container {
 	width: $containerMinWidth;
 }
-
+.block {
+	padding: 80px 0;
+}
 .block-gray {
 	background: $blockGray;
 }
 footer {
 	background: #222222;
 	color: #ffffff;
+	padding: 60px 0;
 }

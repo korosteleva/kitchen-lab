@@ -4,16 +4,20 @@
 	<meta charset="UTF-8">
 	<title>Kitchen Lab</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.steps.css">
 </head>
 <body>
 <div class="block-promo">
 	<nav>
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-6">
+				<div class="col-xs-4">
 					<div class="block-promo__logo">Лаборатория Кухни</div>
 				</div>
-				<div class="col-xs-6 text-right">
+				<div class="col-xs-4">
+					<a href="" class="block-promo__apply">записаться на проект</a>
+				</div>
+				<div class="col-xs-4 text-right">
 					<div class="block-promo__phone"><a href="tel:89610093028">+7(961)009-30-28</a></div>
 					<div class="block-promo__time">ежедневно 10:00 &mdash; 22:00</div>
 				</div>
@@ -37,10 +41,10 @@
 			можно сделать за 70 и за 700 тыс?
 		</h2>
 		<p>
-			Цена зависит от выбранных материалов и качества<br>
-			фурнитуры. Мы занимаемся проектированием эргономичных<br>
-			кухонь и сотрудничаем с 15 фабриками разной ценовой<br>
-			категории. больше не нужно ходить по салонам и сравнивать<br>
+			Цена зависит от выбранных материалов дверок и качества<br>
+			механизмов. Мы занимаемся проектированием эргономичных<br>
+			кухонь и сотрудничаем с 15 фабриками разной ценовой категории.<br>
+			Больше не нужно ходить по салонам и сравнивать<br>
 			цены.
 		</p>
 		<p>
@@ -116,10 +120,16 @@
 <div class="block block-gray">
 	<div class="container">
 		<h2 class="text-center">
-			Для проектирования и оценки стоимости кухни<br>
+			Для записи на проектирование и оценку стоимости кухни<br>
 			ответьте, пожалуйста, на несколько вопросов
 		</h2>
-		<form>
+		<form id="wizard">
+
+			<h1>First Step</h1>
+			<div>First Content</div>
+
+			<h1>Second Step</h1>
+			<div>Second Content</div>
 
 		</form>
 	</div>
@@ -154,5 +164,8 @@
 	</div>
 </footer>
 
+<script src="javascript/jquery-3.1.0.min.js"></script>
+<script src="javascript/jquery.steps.min.js"></script>
+<script src="javascript/custom.js"></script>
 </body>
 </html>
