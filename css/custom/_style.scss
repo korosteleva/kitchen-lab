@@ -1,0 +1,19 @@
+$containerMinWidth: 940px;
+$blockGray: #f7f6f4;
+$kitchenPink: #e8346c;
+
+html {
+	min-width: $containerMinWidth;
+}
+
+.container {
+	width: $containerMinWidth;
+}
+
+.block-gray {
+	background: $blockGray;
+}
+footer {
+	background: #222222;
+	color: #ffffff;
+}
