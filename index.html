@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Лаборатория кухни</title>
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/jquery.steps.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
@@ -56,7 +56,7 @@
 			</div>
 			<div class="col-xs-4 block__kitchen-difference__img">
 				<img src="images/kitchen_prototype.png"/>
-				<a href="" class="dashed">Смотреть примеры расчетов</a>
+				<!--<a href="" class="dashed">Смотреть примеры расчетов</a>-->
 			</div>
 		</div>
 
@@ -219,20 +219,316 @@
 	<img src="images/kitchen-colors.png"/>
 </div>
 
-<div class="block">
+<div class="block block__form">
 	<div class="container">
 		<h2 class="text-center">
 			Для записи на проектирование и оценку стоимости кухни<br>
 			ответьте, пожалуйста, на несколько вопросов
 		</h2>
-		<form id="wizard">
 
-			<h1>First Step</h1>
-			<div>First Content</div>
+		<form id="example-form" action="#">
+			<div>
+				<h3>Шаг 1</h3>
+				<section>
+					<div class="section-title text-center">
+						<h3>Выберите стиль кухни</h3>
+						<div class="hint">Обращайте внимание только на стиль.<br>
+							Цвета выбираются непосредственно  с дизайнером по образцам.</div>
+					</div>
+					<div class="section-content">
 
-			<h1>Second Step</h1>
-			<div>Second Content</div>
+						<div class="radio-btn__elements">
+							<label>
+								<input name="kitchen-style" type="radio" value="Фигурные дверки" checked>
+								<span class="radio-btn__element-wrapper">
+									<span class="radio-btn__element">
+										<span class="radio-btn__element-title">
+											Фигурные дверки
+											<span class="radio-btn__element-checkbox"></span>
+										</span>
+										<span class="radio-btn__element-content">
+											<img src="images/radio1.png">
+										</span>
+									</span>
+								</span>
+							</label>
 
+							<label>
+								<input name="kitchen-style" type="radio" value="Простые дверки">
+								<span class="radio-btn__element-wrapper">
+									<span class="radio-btn__element">
+										<span class="radio-btn__element-title">
+											Простые дверки
+											<span class="radio-btn__element-checkbox"></span>
+										</span>
+										<span class="radio-btn__element-content">
+											<img src="images/radio2.png">
+										</span>
+									</span>
+								</span>
+							</label>
+
+							<label>
+								<input name="kitchen-style" type="radio" value="Не определился">
+								<span class="radio-btn__element-wrapper">
+									<span class="radio-btn__element unknown">
+										<span class="radio-btn__element-title">
+											Не определился
+											<span class="radio-btn__element-checkbox"></span>
+										</span>
+										<span class="radio-btn__element-content">
+											<img src="images/radio3.png">
+										</span>
+									</span>
+								</span>
+							</label>
+
+						</div>
+
+					</div>
+				</section>
+
+				<h3>Шаг 2</h3>
+				<section>
+					<div class="section-title text-center">
+						<h3>Выберите форму кухни</h3>
+					</div>
+					<div class="section-content">
+
+						<div class="radio-btn__elements">
+							<label>
+								<input name="kitchen-form" type="radio" value="Угловая" checked>
+								<span class="radio-btn__element-wrapper">
+									<span class="radio-btn__element">
+										<span class="radio-btn__element-title">
+											Угловая
+											<span class="radio-btn__element-checkbox"></span>
+										</span>
+										<span class="radio-btn__element-content">
+											<img src="images/radio4.png">
+										</span>
+									</span>
+								</span>
+							</label>
+
+							<label>
+								<input name="kitchen-form" type="radio" value="Прямая">
+								<span class="radio-btn__element-wrapper">
+									<span class="radio-btn__element">
+										<span class="radio-btn__element-title">
+											Прямая
+											<span class="radio-btn__element-checkbox"></span>
+										</span>
+										<span class="radio-btn__element-content">
+											<img src="images/radio5.png">
+										</span>
+									</span>
+								</span>
+							</label>
+
+							<label>
+								<input name="kitchen-form" type="radio" value="П-образная">
+								<span class="radio-btn__element-wrapper">
+									<span class="radio-btn__element">
+										<span class="radio-btn__element-title">
+											П-образная
+											<span class="radio-btn__element-checkbox"></span>
+										</span>
+										<span class="radio-btn__element-content">
+											<img src="images/radio6.png">
+										</span>
+									</span>
+								</span>
+							</label>
+
+						</div>
+
+					</div>
+				</section>
+
+
+				<h3>Шаг 3</h3>
+				<section>
+					<div class="section-title text-center">
+						<h3>Выберите стиль кухни</h3>
+						<div class="hint">Обращайте внимание только на стиль.<br>
+							Цвета выбираются непосредственно  с дизайнером по образцам.</div>
+					</div>
+					<div class="section-content">
+
+						<div class="radio-btn__elements radio-btn__elements-text">
+							<label>
+								<input name="kitchen-time" type="radio" value="Как можно раньше" checked>
+								<span class="radio-btn__element-wrapper">
+									<span class="radio-btn__element">
+										<span class="radio-btn__element-title">
+											Как можно раньше
+											<span class="radio-btn__element-checkbox"></span>
+										</span>
+									</span>
+								</span>
+							</label>
+
+							<label>
+								<input name="kitchen-time" type="radio" value="2 недели">
+								<span class="radio-btn__element-wrapper">
+									<span class="radio-btn__element">
+										<span class="radio-btn__element-title">
+											2 недели
+											<span class="radio-btn__element-checkbox"></span>
+										</span>
+									</span>
+								</span>
+							</label>
+
+							<label>
+								<input name="kitchen-time" type="radio" value="4 недели">
+								<span class="radio-btn__element-wrapper">
+									<span class="radio-btn__element">
+										<span class="radio-btn__element-title">
+											4 недели
+											<span class="radio-btn__element-checkbox"></span>
+										</span>
+									</span>
+								</span>
+							</label>
+
+							<label>
+								<input name="kitchen-time" type="radio" value="6 недель">
+								<span class="radio-btn__element-wrapper">
+									<span class="radio-btn__element">
+										<span class="radio-btn__element-title">
+											6 недель
+											<span class="radio-btn__element-checkbox"></span>
+										</span>
+									</span>
+								</span>
+							</label>
+
+							<label>
+								<input name="kitchen-time" type="radio" value="2 месяца">
+								<span class="radio-btn__element-wrapper">
+									<span class="radio-btn__element">
+										<span class="radio-btn__element-title">
+											2 месяца
+											<span class="radio-btn__element-checkbox"></span>
+										</span>
+									</span>
+								</span>
+							</label>
+
+							<label>
+								<input name="kitchen-time" type="radio" value="Не срочно">
+								<span class="radio-btn__element-wrapper">
+									<span class="radio-btn__element">
+										<span class="radio-btn__element-title">
+											Не срочно, пока нужен только проект
+											<span class="radio-btn__element-checkbox"></span>
+										</span>
+									</span>
+								</span>
+							</label>
+
+						</div>
+
+					</div>
+				</section>
+
+				<h3>Шаг 4</h3>
+				<section>
+					<div class="section-title text-center">
+						<h3>Как вам удобнее предоставить необходимую<br>
+							информацию для проекта</h3>
+					</div>
+					<div class="section-content">
+
+						<div class="radio-btn__elements radio-btn__elements-text radio-btn__elements-text-big">
+							<label>
+								<input name="kitchen-docs" type="radio" value="Хочу приехать в офис и лично пообщаться с дизайнером-технологом" checked>
+								<span class="radio-btn__element-wrapper">
+									<span class="radio-btn__element">
+										<span class="radio-btn__element-title">
+											Хочу приехать в офис и лично пообщаться с дизайнером-технологом<br>
+											<strong>Бесплатно</strong>
+											<span class="radio-btn__element-checkbox"></span>
+										</span>
+									</span>
+								</span>
+							</label>
+
+							<label>
+								<input name="kitchen-docs" type="radio" value="Хочу вызвать дизайнера-технолога с образцами к себе или на объект">
+								<span class="radio-btn__element-wrapper">
+									<span class="radio-btn__element">
+										<span class="radio-btn__element-title">
+											Хочу вызвать дизайнера-технолога с образцами к себе или на объект<br>
+											<strong>1 600 рублей</strong>
+											<span class="radio-btn__element-checkbox"></span>
+										</span>
+									</span>
+								</span>
+							</label>
+
+							<label>
+								<input name="kitchen-docs" type="radio" value="Хочу предоставить информацию по телефону или по почте">
+								<span class="radio-btn__element-wrapper">
+									<span class="radio-btn__element">
+										<span class="radio-btn__element-title">
+											Хочу предоставить информацию по телефону или по почте<br>
+											<strong>Бесплатно</strong>
+											<span class="radio-btn__element-checkbox"></span>
+										</span>
+									</span>
+								</span>
+							</label>
+
+							<label>
+								<input name="kitchen-docs" type="radio" value="Возможен любой вариант">
+								<span class="radio-btn__element-wrapper">
+									<span class="radio-btn__element">
+										<span class="radio-btn__element-title">
+											Возможен любой вариант
+											<span class="radio-btn__element-checkbox"></span>
+										</span>
+									</span>
+								</span>
+							</label>
+
+						</div>
+
+					</div>
+				</section>
+
+				<h3>Шаг 5</h3>
+				<section>
+					<div class="section-title text-center">
+						<h3>Контактные данные</h3>
+					</div>
+					<div class="section-content">
+
+						<input type="text" name="phone" placeholder="Ваш номер телефона для связи">
+						<input type="text" name="name" placeholder="Ваше имя и электронная почта">
+
+					</div>
+				</section>
+
+				<h3>Финал</h3>
+				<section>
+					<div class="section-title text-center">
+						<div class="section-title__success">
+							<img src="images/form-valid.png"/>
+						</div>
+						<h2>Спасибо за заявку</h2>
+						<p>
+							Наш менеджер свяжется с вами по указанному<br>
+							телефону и согласует дальнейшие шаги.
+						</p>
+						<p>
+							Ожидайте звонка.
+						</p>
+					</div>
+				</section>
+			</div>
 		</form>
 	</div>
 </div>
@@ -267,7 +563,8 @@
 </footer>
 
 <script src="javascript/jquery-3.1.0.min.js"></script>
-<script src="javascript/jquery.steps.min.js"></script>
+<script src="javascript/jquery.validate.js"></script>
+<script src="javascript/jquery.steps.js"></script>
 <script src="javascript/custom.js"></script>
 </body>
 </html>
