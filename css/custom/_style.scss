@@ -1,22 +1,92 @@
-$containerMinWidth: 940px;
-$blockGray: #f7f6f4;
+$containerMinWidth: 960px;
+
 $kitchenPink: #e8346c;
+
+$fontHW: 'PF High Way', sans-serif;
+$fontRbt: 'Roboto', sans-serif;
 
 html {
 	min-width: $containerMinWidth;
 }
 
+body {
+	font-family: $fontHW;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #000000;
+}
+
 .container {
 	width: $containerMinWidth;
 }
-.block {
-	padding: 80px 0;
+
+h2 {
+	font-family: $fontHW;
+	font-size: 30px;
+	line-height: 45px;
+	color: #000000;
+	margin: 0;
+
+	&.big {
+		font-size: 45px;
+	}
 }
-.block-gray {
-	background: $blockGray;
+
+p {
+	font-family: $fontRbt;
+	font-size: 18px;
+	line-height: 30px;
+	color: #000000;
 }
-footer {
-	background: #222222;
-	color: #ffffff;
-	padding: 60px 0;
+
+.dashed {
+	text-decoration: none;
+	border-bottom: 1px dashed;
+
+	&:hover {
+		text-decoration: none;
+		border-bottom-color: transparent;
+	}
+}
+.highlighted {
+	border-bottom: 3px solid $kitchenPink;
+}
+
+.list-decorated {
+	padding-top: 20px;
+	padding-bottom: 2px;
+	li {
+		font-family: $fontRbt;
+		position: relative;
+		padding-left: 50px;
+		font-size: 18px;
+		line-height: 25px;
+		color: #000000;
+		margin-bottom: 20px;
+
+		span {
+			position: absolute;
+			top: -3px;
+			left: 0;
+
+			$spanHeight: 30px;
+			width: $spanHeight;
+			height: $spanHeight;
+			border-radius: 50%;
+			text-align: center;
+			background: $kitchenPink;
+			color: #ffffff;
+			font-family: $fontHW;
+			font-size: 20px;
+			line-height: $spanHeight + 4px;
+			display: inline-block;
+
+		}
+
+		small {
+			display: block;
+			font-size: 14px;
+		}
+	}
 }

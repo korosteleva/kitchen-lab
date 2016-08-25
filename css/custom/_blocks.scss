@@ -1,0 +1,150 @@
+$blockGray: #F7F6F4;
+
+.block {
+	padding: 70px 0;
+
+	&-gray {
+		background: $blockGray;
+	}
+
+	&__kitchen-difference {
+		padding-top: 90px;
+
+		h2 {
+			margin-bottom: 10px;
+		}
+
+		&__text {
+			padding-top: 8px;
+			p {
+				margin-bottom: 20px;
+			}
+		}
+
+		&__img {
+			position: relative;
+			height: 235px;
+
+			img {
+				position: absolute;
+				left: -90px;
+				top: 19px;
+			}
+			a {
+				position: absolute;
+				bottom: 0;
+				left: 48px;
+
+				font-family: $fontRbt;
+				font-size: 12px;
+				line-height: 18px;
+				color: #000000;
+				opacity: .4;
+			}
+		}
+
+	}
+
+
+	&__free-project {
+		padding-top: 90px;
+		h2 {
+			margin-bottom: 32px;
+		}
+	}
+
+	&__kitchen-ideas {
+		padding-top: 100px;
+		padding-bottom: 35px;
+		h2 {
+			margin-bottom: 45px;
+		}
+		&-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			> div {
+				width: 180px;
+				text-align: center;
+				margin-bottom: 30px;
+
+				&:nth-child(5n) {
+					margin-left: 0;
+				}
+				&:nth-child(5n + 5) {
+					margin-right: 0;
+				}
+
+				img {
+					margin-bottom: 25px;
+				}
+
+				p {
+					font-size: 14px;
+					line-height: 20px;
+					text-align: center;
+				}
+			}
+		}
+
+	}
+
+	&__kitchen-colors {
+		img {
+			padding-top: 35px;
+			padding-bottom: 10px;
+		}
+	}
+
+	&__has-image {
+		position: relative;
+		padding-top: 90px;
+		padding-bottom: 80px;
+
+		h2 {
+			padding-bottom: 10px;
+		}
+
+		&__picture {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+
+			&:after {
+				content: '';
+				position: absolute;
+				width: calc(100% - 20px);
+				height: calc(100% - 20px);
+				top: 10px;
+				left: 10px;
+				border: 3px solid $kitchenPink;
+			}
+		}
+	}
+
+	&__how-we-work {
+		.block__has-image__picture {
+			background: transparent url('../images/how-we-work.png') no-repeat 50% 50%;
+			background-size: cover;
+		}
+	}
+
+	&__kitchen-benefit {
+		.block__has-image__picture {
+			background: transparent url('../images/kitchen-benefit.png') no-repeat 50% 50%;
+			background-size: cover;
+		}
+	}
+}
+
+.kitchen-logos {
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	margin-top: 27px;
+	> div {
+		width: 140px;
+		margin: 0 10px;
+	}
+}

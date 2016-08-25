@@ -1,0 +1,49 @@
+footer {
+	background: #222222;
+	color: #ffffff;
+	padding: 50px 0 60px 0;
+
+	.footer {
+		&-logo {
+			font-weight: 500;
+			font-size: 30px;
+			line-height: 45px;
+			margin-bottom: 12px;
+		}
+
+		&-info {
+			font-family: $fontRbt;
+			color: #F3F2F0;
+			font-size: 14px;
+			line-height: 25px;
+			opacity: .6;
+		}
+
+		&-phone {
+			font-size: 24px;
+			line-height: 45px;
+			font-weight: 400;
+			margin-top: 2px;
+			margin-bottom: 5px;
+			a {
+				color: #ffffff;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+
+		&-time {
+			font-family: $fontRbt;
+			color: #F3F2F0;
+			font-size: 14px;
+			line-height: 25px;
+			opacity: .6;
+			p {
+				margin-bottom: 5px;
+				color: #ffffff;
+				font-size: 14px;
+			}
+		}
+	}
+}
