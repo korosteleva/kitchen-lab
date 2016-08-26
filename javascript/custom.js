@@ -67,4 +67,15 @@
     $('html, body').animate({ scrollTop: $(document).height() }, 'slow');
   });
 
+
+  var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    loop: true,
+    slidesPerView: 'auto',
+    centeredSlides: true
+  });
+
 }());

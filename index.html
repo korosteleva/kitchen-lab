@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Лаборатория кухни</title>
 	<link rel="stylesheet" href="css/jquery.steps.css">
+	<link rel="stylesheet" href="css/swiper.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="javascript/jquery-3.1.0.min.js"></script>
 	<script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.1/jquery.xdomainrequest.min.js"></script>
@@ -143,83 +144,79 @@
 </div>
 
 <div class="block block__kitchen-ideas">
-	<div class="container">
-		<h2 class="text-center">Топ-10 идей для организации хранения на кухне,<br>
-			которые мы используем в проектах</h2>
 
-		<div class="block__kitchen-ideas-wrapper">
-			<div>
-				<img src="images/idea1.png">
-				<p>
-					Угловые выдвижные системы
-				</p>
+	<div class="text-center">
+		<h2>
+			Топ-10 идей для организации хранения на кухне,<br>
+			которые мы используем в проектах
+		</h2>
+		<p>
+			На кухне часто не хватает подходящей полочки или ящика для кухонной техники, казана, набора ножей или сервиза.<br>
+			Мы заранее продумаем для каждого предмета специальное место так, чтобы это было удобно и красиво.<br>
+			Вот самые популярные решения для хранения, которые мы используем:
+		</p>
+	</div>
+
+	<div class="container">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="images/slider/slider_1.png">
+					<p>Угловые выдвижные системы</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/slider/slider_2.png">
+					<p>Кладовка</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/slider/slider_3.png">
+					<p>Выдвижные ящики для вертикальной утвари</p>
+				</div>
+
+				<div class="swiper-slide">
+					<img src="images/slider/slider_4.png">
+					<p>Ящик под мойкой</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/slider/slider_5.png">
+					<p>Супер полки для хранения большой посуды</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/slider/slider_6.png">
+					<p>Мобильный «Остров»</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/slider/slider_7.png">
+					<p>Встроенный отсек для бытовой техники</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/slider/slider_8.png">
+					<p>Полки для специй</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/slider/slider_9.png">
+					<p>Выдвижная урна</p>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/slider/slider_10.png">
+					<p>Выдвижной отсек для хранения противней и форм</p>
+				</div>
 			</div>
-			<div>
-				<img src="images/idea2.png">
-				<p>
-					Кладовка
-				</p>
-			</div>
-			<div>
-				<img src="images/idea3.png">
-				<p>
-					Выдвижные ящики
-					для вертикальной утвари
-				</p>
-			</div>
-			<div>
-				<img src="images/idea4.png">
-				<p>
-					Ящик под мойкой
-				</p>
-			</div>
-			<div>
-				<img src="images/idea5.png">
-				<p>
-					Супер полки для хранения большой посуды
-				</p>
-			</div>
-			<div>
-				<img src="images/idea6.png">
-				<p>
-					Мобильный «Остров»
-				</p>
-			</div>
-			<div>
-				<img src="images/idea7.png">
-				<p>
-					Встроенный отсек
-					для бытовой техники
-				</p>
-			</div>
-			<div>
-				<img src="images/idea8.png">
-				<p>
-					Полки для специй
-				</p>
-			</div>
-			<div>
-				<img src="images/idea9.png">
-				<p>
-					Выдвижная урна
-				</p>
-			</div>
-			<div>
-				<img src="images/idea10.png">
-				<p>
-					Выдвижной отсек
-					для хранения
-					противней и форм
-				</p>
-			</div>
+				<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
 		</div>
 	</div>
 </div>
 
 <div class="block block-gray text-center block__kitchen-colors">
-	<h2>Кухни по нашим проектам делаются подзаказ,<br>
-		потому вы можете выбрать любой цвет и фактуру</h2>
-	<img src="images/kitchen-colors.png"/>
+	<h2>
+		<span>Кухни по нашим проектам делаются подзаказ,</span><br>
+		<span>потому вы можете выбрать любой цвет и фактуру</span>
+	</h2>
 </div>
 
 <div class="block block__form">
@@ -242,30 +239,75 @@
 
 						<div class="radio-btn__elements">
 							<label>
-								<input name="kitchen-style" type="radio" value="Фигурные дверки" checked>
+								<input name="kitchen-style" type="radio" value="Классика" checked>
 								<span class="radio-btn__element-wrapper">
 									<span class="radio-btn__element">
 										<span class="radio-btn__element-title">
-											Фигурные дверки
+											Классика
 											<span class="radio-btn__element-checkbox"></span>
 										</span>
 										<span class="radio-btn__element-content">
-											<img src="images/radio1.png">
+											<img src="images/radio1-1.png">
 										</span>
 									</span>
 								</span>
 							</label>
 
 							<label>
-								<input name="kitchen-style" type="radio" value="Простые дверки">
+								<input name="kitchen-style" type="radio" value="Минимализм">
 								<span class="radio-btn__element-wrapper">
 									<span class="radio-btn__element">
 										<span class="radio-btn__element-title">
-											Простые дверки
+											Минимализм
 											<span class="radio-btn__element-checkbox"></span>
 										</span>
 										<span class="radio-btn__element-content">
-											<img src="images/radio2.png">
+											<img src="images/radio1-2.png">
+										</span>
+									</span>
+								</span>
+							</label>
+
+							<label>
+								<input name="kitchen-style" type="radio" value="Кантри">
+								<span class="radio-btn__element-wrapper">
+									<span class="radio-btn__element">
+										<span class="radio-btn__element-title">
+											Кантри
+											<span class="radio-btn__element-checkbox"></span>
+										</span>
+										<span class="radio-btn__element-content">
+											<img src="images/radio1-3.png">
+										</span>
+									</span>
+								</span>
+							</label>
+
+							<label>
+								<input name="kitchen-style" type="radio" value="Модерн">
+								<span class="radio-btn__element-wrapper">
+									<span class="radio-btn__element">
+										<span class="radio-btn__element-title">
+											Модерн
+											<span class="radio-btn__element-checkbox"></span>
+										</span>
+										<span class="radio-btn__element-content">
+											<img src="images/radio1-4.png">
+										</span>
+									</span>
+								</span>
+							</label>
+
+							<label>
+								<input name="kitchen-style" type="radio" value="Город">
+								<span class="radio-btn__element-wrapper">
+									<span class="radio-btn__element">
+										<span class="radio-btn__element-title">
+											Город
+											<span class="radio-btn__element-checkbox"></span>
+										</span>
+										<span class="radio-btn__element-content">
+											<img src="images/radio1-5.png">
 										</span>
 									</span>
 								</span>
@@ -280,7 +322,7 @@
 											<span class="radio-btn__element-checkbox"></span>
 										</span>
 										<span class="radio-btn__element-content">
-											<img src="images/radio3.png">
+											<img src="images/radio1-6.png">
 										</span>
 									</span>
 								</span>
@@ -308,7 +350,7 @@
 											<span class="radio-btn__element-checkbox"></span>
 										</span>
 										<span class="radio-btn__element-content">
-											<img src="images/radio4.png">
+											<img src="images/radio2-1.png">
 										</span>
 									</span>
 								</span>
@@ -323,7 +365,7 @@
 											<span class="radio-btn__element-checkbox"></span>
 										</span>
 										<span class="radio-btn__element-content">
-											<img src="images/radio5.png">
+											<img src="images/radio2-2.png">
 										</span>
 									</span>
 								</span>
@@ -338,7 +380,7 @@
 											<span class="radio-btn__element-checkbox"></span>
 										</span>
 										<span class="radio-btn__element-content">
-											<img src="images/radio6.png">
+											<img src="images/radio2-3.png">
 										</span>
 									</span>
 								</span>
@@ -353,9 +395,9 @@
 				<h3>Шаг 3</h3>
 				<section>
 					<div class="section-title text-center">
-						<h3>Выберите стиль кухни</h3>
-						<div class="hint">Обращайте внимание только на стиль.<br>
-							Цвета выбираются непосредственно  с дизайнером по образцам.</div>
+						<h3>Укажите срок, когда кухня должна быть установлена</h3>
+						<div class="hint">Сроки у фабрик сильно отличаются.<br>
+							Мы подберём производителей, которые точно уложатся в ваш срок.</div>
 					</div>
 					<div class="section-content">
 
@@ -568,6 +610,7 @@
 
 <script src="javascript/jquery.validate.js"></script>
 <script src="javascript/jquery.steps.js"></script>
+<script src="javascript/swiper.min.js"></script>
 <script src="javascript/custom.js"></script>
 </body>
 </html>

@@ -880,6 +880,7 @@
 					$(this).after('<div class="' + options.clearFixCssClass + '"></div>');
 					$(this).parent().animate({ height: bodyHeight }, "slow");
 				});
+		$('.wizard > .content').css('min-height', 320);
 	}
 
 	/**

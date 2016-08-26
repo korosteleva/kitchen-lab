@@ -56,9 +56,7 @@ $blockGray: #F7F6F4;
 	&__kitchen-ideas {
 		padding-top: 100px;
 		padding-bottom: 35px;
-		h2 {
-			margin-bottom: 45px;
-		}
+
 		&-wrapper {
 			display: flex;
 			flex-wrap: wrap;
@@ -90,9 +88,27 @@ $blockGray: #F7F6F4;
 	}
 
 	&__kitchen-colors {
-		img {
-			padding-top: 35px;
-			padding-bottom: 10px;
+		background: transparent url("../images/kitchen-colors.png") no-repeat 50% 50%;
+		@media (min-width: 1200px) {
+			background-size: cover;
+		}
+		height: 550px;
+		padding-top: 40px;
+
+		h2 {
+			span {
+				display: inline-block;
+				background: $kitchenPink;
+				color: #ffffff;
+				padding: 10px 35px;
+				
+				&:first-child {
+					padding-bottom: 0;
+				}
+				&:last-child {
+					padding-top: 0;
+				}
+			}
 		}
 	}
 
@@ -110,16 +126,6 @@ $blockGray: #F7F6F4;
 			top: 0;
 			right: 0;
 			bottom: 0;
-
-			&:after {
-				content: '';
-				position: absolute;
-				width: calc(100% - 20px);
-				height: calc(100% - 20px);
-				top: 10px;
-				left: 10px;
-				border: 3px solid $kitchenPink;
-			}
 		}
 	}
 
