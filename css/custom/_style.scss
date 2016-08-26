@@ -121,3 +121,25 @@ p {
 	background: url('../images/slider/swiper-next.png') no-repeat 50% 50%;
 	right: 310px;
 }
+
+.swiper-shadow-next,
+.swiper-shadow-prev {
+	position: absolute;
+	top: 0;
+	width: 211px;
+	height: 450px;
+	z-index: 10;
+}
+
+.swiper-shadow-prev {
+	background: url('../images/slider/swiper-shadow-prev.png') no-repeat 50% 50%;
+	background-size: cover;
+	left: -3px;
+	right: auto;
+}
+.swiper-shadow-next {
+	background: url('../images/slider/swiper-shadow-next.png') no-repeat 50% 50%;
+	background-size: cover;
+	left: auto;
+	right: -3px;
+}
