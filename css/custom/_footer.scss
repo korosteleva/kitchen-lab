@@ -13,10 +13,13 @@ footer {
 
 		&-info {
 			font-family: $fontRbt;
-			color: #F3F2F0;
+			color: #F3F2F0 !important;
 			font-size: 14px;
 			line-height: 25px;
 			opacity: .6;
+			a {
+				color: #F3F2F0 !important;
+			}
 		}
 
 		&-phone {

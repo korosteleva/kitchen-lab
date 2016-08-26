@@ -32,6 +32,12 @@
 
     onStepChanging: function (event, currentIndex, newIndex) {
 
+
+      if (currentIndex === 0) {
+        $('.wizard > .content').css('min-height', 320);
+      }
+
+
       if (form.valid() && currentIndex === 4 && newIndex === 5) {
           var contentType ="application/x-www-form-urlencoded; charset=utf-8";
 
