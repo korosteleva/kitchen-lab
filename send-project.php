@@ -36,8 +36,8 @@ $emailText =
 
 $emails = array(
 	'korosteleva.tatiana92@gmail.com',
-//	'123@redfor.ru',
-//	'andrey_a@redfor.ru'
+	'123@redfor.ru',
+	'andrey_a@redfor.ru'
 );
 
 foreach ($emails as $email) {
