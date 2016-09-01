@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="javascript/jquery-3.1.0.min.js"></script>
-	<script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.1/jquery.xdomainrequest.min.js"></script>
 
 </head>
 <body>
@@ -20,9 +19,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-5">
-					<div class="header__logo">Лаборатория Кухни</div>
+					<div class="header__logo"><img src="images/logo.png"/></div>
 				</div>
-				<div class="col-xs-3">
+				<div class="col-xs-3 text-right">
 					<a href="" class="header__apply dashed">Записаться на проект</a>
 				</div>
 				<div class="col-xs-4 text-right">
@@ -37,7 +36,7 @@
 		<div class="header__title">Спроектируем удобную кухню</div>
 		<div class="header__text">
 			с оптимальным использованием пространства<br>
-			и предоставим расчет стоимости и сроков от <span class="highlighted">15 производителей</span>
+			и предоставим расчет стоимости и сроков от <span class="highlighted js-to-kitchen">5 белорусских фабрик</span>
 		</div>
 	</div>
 </header>
@@ -53,7 +52,7 @@
 				<p>
 					Цена зависит от выбранных материалов дверок и качества<br>
 					механизмов. Мы занимаемся проектированием<br>
-					эргономичных кухонь и сотрудничаем с 15 фабриками разной<br>
+					эргономичных кухонь и сотрудничаем с 5 фабриками разной<br>
 					ценовой категории.
 				</p>
 				<p>
@@ -71,7 +70,7 @@
 	</div>
 </div>
 
-<div class="block">
+<div class="block js-kitchen-logo">
 	<div class="container text-center">
 		<h2>Фабрики кухонь, чьи оценки мы вам предоставим</h2>
 		<div class="kitchen-logos">
@@ -123,8 +122,43 @@
 			Производители выкупают у нас право просчитывать проекты,<br>
 			для них это хорошая реклама.
 		</p>
+
+		<br><br>
+		<h3>У вас уже есть проект?</h3>
+		<p>Отправьте его нам на экспертизу и просчёт в наших фабриках и получите <span class="js-best-price block__free-project__best-price highlighted" data-toggle="modal" data-target="#bestPriceForm">лучшую цену</span>!</p>
 	</div>
 </div>
+
+<div id="bestPriceForm" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="bestPriceFormLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="bestPriceFormLabel">Отправьте ваш проект нам на экспертизу!</h4>
+			</div>
+			<div class="modal-body">
+
+				<form id="projectForm" enctype="multipart/form-data">
+
+					<input type="text" name="name" id="inputName" placeholder="Ваше имя">
+
+					<input type="text" name="phone" id="inputPhone" placeholder="Ваш номер телефона">
+
+					<input type="text" name="email" id="inputEmail" placeholder="Ваша электронная почта">
+
+					<div class="form-group">
+						<label for="inputFile">Загрузите Ваш проект</label>
+						<input type="file" name="project" id="inputFile">
+					</div>
+
+					<input type="submit" class="btn btn-kitchen" value="Отправить заявку"/>
+				</form>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
 
 <div class="block block-gray block__has-image block__kitchen-benefit">
 	<div class="container">
@@ -231,7 +265,7 @@
 	</h2>
 </div>
 
-<div class="block block__form">
+<div class="block block__form js-apply">
 	<div class="container">
 		<h2 class="text-center">
 			Для записи на проектирование и оценку стоимости кухни<br>
@@ -326,11 +360,11 @@
 							</label>
 
 							<label>
-								<input name="kitchen-style" type="radio" value="Не определился">
+								<input name="kitchen-style" type="radio" value="Пока не знаю">
 								<span class="radio-btn__element-wrapper">
 									<span class="radio-btn__element unknown">
 										<span class="radio-btn__element-title">
-											Не определился
+											Пока не знаю
 											<span class="radio-btn__element-checkbox"></span>
 										</span>
 										<span class="radio-btn__element-content">
@@ -564,7 +598,8 @@
 					<div class="section-content">
 
 						<input type="text" name="phone" placeholder="Ваш номер телефона для связи">
-						<input type="text" name="name" placeholder="Ваше имя и электронная почта">
+						<input type="text" name="name" placeholder="Ваше имя">
+						<input type="text" name="email" placeholder="Ваша электронная почта">
 
 					</div>
 				</section>
@@ -623,6 +658,15 @@
 <script src="javascript/jquery.validate.js"></script>
 <script src="javascript/jquery.steps.js"></script>
 <script src="javascript/swiper.min.js"></script>
+<script src="javascript/modal.js"></script>
 <script src="javascript/custom.js"></script>
+
+<script>
+	user_key = '28788d6b7dda09732d01561282173628';
+</script>
+<script charset="UTF-8" src='https://callbackdiscount.com/service/scripts/script_ip.js'>
+</script>
+<div id = 'callback-holder'></div>
+
 </body>
 </html>
