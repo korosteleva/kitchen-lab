@@ -11,9 +11,7 @@ $emailText =
 	'Email: ' . $_POST['email'] . PHP_EOL;
 
 $emails = array(
-	'korosteleva.tatiana92@gmail.com',
-	'123@redfor.ru',
-	'andrey_a@redfor.ru'
+	'korosteleva.tatiana92@gmail.com'
 );
 
 foreach ($emails as $email) {
